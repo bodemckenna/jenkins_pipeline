@@ -16,7 +16,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh 'sh job.sh'
 		sh 'ls -al'
 		sh 'pwd'
 		sh 'hostname'
