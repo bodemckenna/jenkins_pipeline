@@ -19,4 +19,10 @@ pipeline {
             }
         }
     }
+    node {
+      stage('Execute some shell') {
+              sh 'run.sh'
+	      sh "run.sh"
+  	}
+    }
 }
