@@ -18,11 +18,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-    }
-    node {
-      stage('Execute some shell') {
-              sh 'run.sh'
-	      sh "run.sh"
-  	}
+	    stage('Execute some shell') {
+		    sh 'run.sh'
+		    sh "run.sh"
+	    }
     }
 }
