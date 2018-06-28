@@ -16,13 +16,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+		sh 'sh job.sh'
+		sh 'ls -al'
+		sh 'pwd'
+		sh 'hostname'
             }
         }
-	stage('Execute some shell') {
-	    sh 'sh run.sh'
-	    sh 'pwd'
-	    sh 'hostname'
-	    sh 'ls -al'
-	    }
     }
 }
