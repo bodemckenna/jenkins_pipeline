@@ -19,7 +19,10 @@ pipeline {
             }
         }
 	stage('Execute some shell') {
-	    sh 'run.sh'
+	    sh 'sh run.sh'
+	    sh 'pwd'
+	    sh 'hostname'
+	    sh 'ls -al'
 	    }
     }
 }
